@@ -1,8 +1,7 @@
 import pygame
 
 class CircleShape(pygame.sprite.Sprite):
-    def __int__(self, x, y, radius):
-        # we will be using this later
+    def __init__(self, x, y, radius):
         if hasattr(self, "containers"):
             super().__init__(self.containers)
         else:
